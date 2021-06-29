@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body {
+  height: calc(100vh - 40px);
+  width: calc(100vw - 40px);
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: "Source Sans Pro", sans-serif;
+  border: solid;
+  border-width: 20px;
+  border-radius: 30px;
+  background: radial-gradient(
+      circle at center,
+      whitesmoke,
+      whitesmoke 10%,
+      black 10%,
+      black 13%,
+      transparent 13%
+    ),
+    linear-gradient(
+      red 0%,
+      red 48%,
+      black 48%,
+      black 52%,
+      whitesmoke 52%,
+      whitesmoke 100%
+    );
+}
+
+.Question {
+  font-size: 150%;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 200px;
+}
+
+.StartButton {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 50px;
+  font: inherit;
+  font-weight: bold;
+  font-size: 150%;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 4px 0 1px #212121, inset -1px -3px 8px 2px #515151;
+}
+
+.StartButton:active {
+  transform: translate(0, 3px);
+  box-shadow: none;
+  border: none;
+}
+
+.Header {
+  font-size: 250%;
+  margin-top: 5px;
+  font-weight: 900;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.UserScore {
+  font-size: 150%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  font-weight: 900;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.PokemonImageHolder {
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.PokemonImage {
+  width: 280px;
+  height: 280px;
+}
+
+.InputsCard {
+  width: 350px;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.Input {
+  width: calc(40%);
+  height: calc(40%);
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.PokemonButton {
+  width: 100%;
+  height: 100%;
+  font-size: 120%;
+  border-radius: inherit;
+  box-shadow: 1px 4px 0 1px #212121, inset -1px -3px 8px 2px #515151;
+}
+.PokemonButton:active {
+  transform: translate(0, 3px);
+  box-shadow: none;
+  border: none;
+}
+
+.Response {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.NextButton {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 50px;
+  font: inherit;
+  font-weight: bold;
+  font-size: 150%;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 4px 0 1px #212121, inset -1px -3px 8px 2px #515151;
+}
+
+.NextButton:active {
+  transform: translate(0, 3px);
+  box-shadow: none;
+  border: none;
+}
+
+#correct:focus {
+  background-color: green;
+}
+
+#incorrect:focus {
+  background-color: red;
+}
+
+.FinalScore {
+  font-size: 250%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.Credits {
+  font-size: 150%;
+  font-style: italic;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  font-weight: 900;
+  color: black;
+}
+.Name {
+  font-size: 200%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  color: black;
 }
